@@ -17,6 +17,7 @@ find_package(OpenCV REQUIRED)
 find_package(tf2 REQUIRED)
 find_package(tf2_ros REQUIRED)
 find_package(rosbag2_cpp REQUIRED)
+find_package(rosidl_default_generators REQUIRED)
 
 # OMP
 find_package(OpenMP)
@@ -28,7 +29,7 @@ endif ()
 if (BUILD_WITH_MARCH_NATIVE)
     add_compile_options(-march=native)
 else ()
-    add_definitions(-std=c++17 -msse -msse2 -msse3 -msse4 -msse4.1 -msse4.2)
+    add_definitions(-msse -msse2 -msse3 -msse4 -msse4.1 -msse4.2)
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -msse -msse2 -msse3 -msse4 -msse4.1 -msse4.2")
 endif ()
 
