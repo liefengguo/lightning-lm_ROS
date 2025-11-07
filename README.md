@@ -14,7 +14,7 @@ This ROS1 fork (`catkin` + Melodic/Noetic) is kept for learning and to document 
 ### Clone & Workspace Setup
 ```bash
 cd ~/catkin_ws/src
-git clone https://github.com/liefengguo/lightning-lm_ROS1.git lightning
+git clone https://github.com/liefengguo/lightning-lm_ROS.git lightning
 cd ..
 catkin_make
 source devel/setup.zsh    or bash
@@ -72,7 +72,7 @@ Adjust these YAMLs before launch to match your dataset/topic layout. For deeper 
 ### 克隆与工作空间
 ```bash
 cd ~/catkin_ws/src
-git clone https://github.com/liefengguo/lightning-lm_ROS1.git lightning
+git clone https://github.com/liefengguo/lightning-lm_ROS.git lightning
 cd ..
 catkin_make
 source devel/setup.zsh    
